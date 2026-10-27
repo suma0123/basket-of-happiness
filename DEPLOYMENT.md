@@ -2,7 +2,8 @@
 
 The production Prisma datasource is PostgreSQL. Create a PostgreSQL database, then add these environment variables to the Vercel project:
 
-- `DATABASE_URL`
+- `DATABASE_URL` (Neon pooled connection string)
+- `DIRECT_URL` (Neon direct, non-pooled connection string for Prisma migrations)
 - `JWT_SECRET`
 - `NEXT_PUBLIC_APP_URL`
 - `RAZORPAY_KEY_ID`
